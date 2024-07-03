@@ -8,6 +8,8 @@ KTP Recognition Models:
 Please download the models and place them in the `model` directory before running the code.
 Make sure you modify the model_test to fit your specific need.
 
+Store your image data in selected_data folder.
+
 # Data
 ```bibtex
 @misc{ktp-j9mig_dataset,
