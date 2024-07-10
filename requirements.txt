@@ -4,7 +4,7 @@ keras
 matplotlib
 numpy
 # opencv_python
-opencv_python_headless
+opencv-python-headless
 pandas
 Pillow
 pytesseract
@@ -17,3 +17,4 @@ streamlit_option_menu
 tensorflow
 tensorflow_intel
 torch
+gdown
