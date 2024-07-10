@@ -23,15 +23,18 @@ import easyocr
 import requests
 import os
 import sys
+import gdown
 
 TF_ENABLE_ONEDNN_OPTS=0
 
 
 def download_model(url, dest_path):
     """Download the classification model from gdrive"""
-    response = requests.get(url)
-    with open(dest_path, 'wb') as f:
-        f.write(response.content)
+    # response = requests.get(url)
+    # with open(dest_path, 'wb') as f:
+    #     f.write(response.content)
+
+    gdown.download(url, dest_path)
 
 def tesseract_read(image):
     custom_config = r'--psm 6'
