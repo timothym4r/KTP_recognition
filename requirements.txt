@@ -16,5 +16,4 @@ streamlit==1.36.0
 streamlit_image_comparison==0.0.4
 streamlit_option_menu==0.3.13
 tensorflow==2.16.1
-tensorflow_intel==2.16.1
 torch==2.3.1
