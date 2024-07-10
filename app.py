@@ -138,7 +138,7 @@ if selected == "Recognition":
             print(np.array(image))
             st.image(image, caption='Uploaded Image.', use_column_width=True)
 
-            if recog_model_selected == "ResNet50_1" or recog_model_selected == "ResNet50_2":
+            if recog_model_selected == "ResNet50":
                 target_size = (256, 256)
             else:
                 target_size = (539, 856)
