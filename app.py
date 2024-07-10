@@ -68,10 +68,10 @@ def prepare_enhance_model(esrgan_model_gdrive):
 def select_recog_model(recog_model_selected):
 
     if recog_model_selected == "ResNet50":
-        recog_model_path = r"https://drive.google.com/uc?id=1J9llUuzdCRtPmqEjzI5fPjwbCj0XDdSt/view?usp=sharing"
+        recog_model_path = r"https://drive.google.com/uc?export=download&confirm=pbef&id=1J9llUuzdCRtPmqEjzI5fPjwbCj0XDdSt/view?usp=sharing"
         recog_model_file_name = "ResNet50.keras"
     elif recog_model_selected == "VGG16":
-        recog_model_path = r" https://drive.google.com/uc?id=1vqk2ehrci4M_DwSL7aAt8z-wYB7bonkI/view?usp=drive_link"
+        recog_model_path = r"https://drive.google.com/uc?export=download&confirm=pbef&id=1vqk2ehrci4M_DwSL7aAt8z-wYB7bonkI/view?usp=drive_link"
         recog_model_file_name = "VGG16.keras"
  
     if not os.path.exists("recog_models"):  # make new dir if it does not exist
@@ -185,7 +185,7 @@ if selected == "Enhancement":
         if st.session_state["show_enhance_option"]:
             device = accelerator.device
 
-            model_path = r"https://drive.google.com/uc?id=1Jt8scnQz0Bk548zGUbtnUeIOgkMFjrbl/view?usp=sharing"
+            model_path = r"https://drive.google.com/uc?export=download&confirm=pbef&id=1Jt8scnQz0Bk548zGUbtnUeIOgkMFjrbl/view?usp=sharing"
             
             enhance_model = prepare_enhance_model(model_path)
 
