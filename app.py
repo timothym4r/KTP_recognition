@@ -44,7 +44,7 @@ def easyocr_read(image):
     reader = easyocr.Reader(lang = ["id"], gpu = False)
     return reader.readText(image, detail = 0)
 
-@st.cache_data
+# @st.cache_data
 def prepare_enhance_model(esrgan_model_gdrive):
     """load the ESRGAN model
 
@@ -64,7 +64,7 @@ def prepare_enhance_model(esrgan_model_gdrive):
     enhance_model.eval()
     return enhance_model
 
-@st.cache_resource
+# @st.cache_resource
 def select_recog_model(recog_model_selected):
 
     if recog_model_selected == "ResNet50":
